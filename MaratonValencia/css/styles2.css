@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.one-column {
+    padding: 7%;
+    padding-bottom: 0%;
+}
+
+.two-column {
+    width: 50%;
+    padding: 7%;
+    float: left;
+}
+
+.four-column {
+    width: 25%;
+    padding: 7%;
+    float: left;
+}
+.h1 {
+    font-size: 4.5vw;
+    color: grey;
+}
+
+.h2 {
+    font-size: 3vw;
+}
+
+.h3 {
+    font-size: 2vw;
+}
+
+@media screen and (max-width:700px) {
+    #section-1 {
+        width: 50%;
+    }
+    #section-2 {
+        width: 100%;
+    }
+    #section-3 {
+        width: 100%;
+    }
+    #section-4.four-column {
+        width: 50%;
+    }
+}
